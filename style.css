@@ -1,0 +1,71 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  color: white;
+}
+
+.hero .name {
+  color: #ffd700;
+}
+
+/* Cake */
+.cake {
+  width: 220px;
+}
+
+/* Cards hover */
+.card img {
+  transition: 0.1s;
+}
+.card img:hover {
+  transform: scale(1.05);
+}
+
+/* 🎈 Balloons */
+.balloons {
+  position: fixed;
+  bottom: -100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  z-index: -1;
+}
+
+.balloon {
+  width: 50px;
+  height: 70px;
+  background: red;
+  border-radius: 50%;
+  animation: float 6s infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-120vh); }
+}
+
+#fireworks {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* 📸 Carousel image size control */
+.carousel-inner img {
+  height: 350px;          /* adjust this value */
+  object-fit:cover;     /* keeps image proportional */
+}
+
+/* 📸 Center photo size adjustment */
+.memory-photo {
+  max-width: 420px;     /* desktop size */
+  width: 50%;
+  height: auto;
+  border-radius: 5px; /* optional: looks nice */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+
